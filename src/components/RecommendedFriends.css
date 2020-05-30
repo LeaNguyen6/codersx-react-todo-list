@@ -1,0 +1,25 @@
+.recommended-friends {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  width: 32vw;
+}
+.top-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.top-title .recomend {
+  color: #999999;
+  font-weight: 500;
+}
+.top-title .view-all{
+    font-size: 14px;
+    font-weight: 500;
+}

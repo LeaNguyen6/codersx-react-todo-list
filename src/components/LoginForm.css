@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+::placeholder {
+    font-size: 12px;
+  }
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin: auto;
+}
+.form-group {
+  position: relative;
+}
+.form-group input {
+  padding: 2rem 0.5rem 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+.form-group label {
+    font-weight: 500;
+  position: absolute;
+  top: 20px;
+  left: 0.5rem;
+}
+.form-check-label {
+  color: #555;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.form-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.btn {
+  background: #00bd56;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+form a{
+    color: black;
+    margin: 1rem;
+}

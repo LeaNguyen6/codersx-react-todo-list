@@ -1,0 +1,33 @@
+.FollowFriendListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.image {
+  width: 64px;
+  height: 64px;
+}
+.image img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.detail {
+  flex: 1;
+  text-align: left;
+  padding-left: 1rem;
+}
+.detail p {
+  margin: 0rem;
+}
+.detail .recommend {
+  color: #999999;
+  font-size: 13px;
+}
+.detail .name {
+}
+.follow{
+    color: #1876F2;
+    font-size: 14px;
+    font-weight: 500;
+}

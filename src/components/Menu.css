@@ -1,0 +1,27 @@
+.Menu ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;    
+}
+.Menu ul > .menu-active{
+    background: #FFFFFF;
+    border-top: 2px solid #8CDC52;
+    box-shadow: 0 2px 5px rgba(221, 221, 221, 0.7);
+    color:#8CDC52;
+}
+.Menu > ul >li{
+    box-sizing: border-box;
+    width: 100px;
+    background-color: rgba(221, 221, 221, 0.5);
+    color: #8E8E8E;
+    list-style-type: none;
+    padding-top: 1rem;
+    border: 1px solid rgba(221, 221, 221, 0.7);
+}
+.Menu > ul>li >i{
+    font-size: 1.5rem;
+}
+.Menu > ul>li >p{
+    margin: 0.5rem 0 1rem;
+}
