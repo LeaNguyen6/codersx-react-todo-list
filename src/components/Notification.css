@@ -1,0 +1,21 @@
+.notify{
+    height: 100px;
+    width: 100px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.notify .unread{
+    top: 20px;
+    left: 65px;
+    position: absolute;
+    background-color: rgb(201, 3, 3);
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+.notify img{
+    width: 60%;
+}

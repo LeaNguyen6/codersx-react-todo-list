@@ -7,6 +7,7 @@ import Menu from './components/Menu'
 import RecommendedFriends from './components/RecommendedFriends'
 import TodoItem from './components/TodoItem'
 import Table from './components/Table'
+import Notification from './components/Notification'
 
 function App() {
   const todos =  [
@@ -55,8 +56,9 @@ function App() {
       <RecommendedFriends friends={listFriends} />
       <Table data={tableList}/>
       <Menu/>*/}
-      {todos.map((x,index)=><TodoItem item={x} key={index} />)}
-     
+      <Notification notify={true}/>
+      {todos.length>0 && todos.map((x,index)=><TodoItem item={x} key={index} />)}
+      {todos.length==0 && 'Nothing here'}
 
     </div>
   );
