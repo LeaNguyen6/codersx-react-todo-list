@@ -8,6 +8,7 @@ import RecommendedFriends from './components/RecommendedFriends'
 import TodoItem from './components/TodoItem'
 import Table from './components/Table'
 import Notification from './components/Notification'
+import SearchBox from './components/SearchBox'
 
 function App() {
   const todos =  [
@@ -55,8 +56,9 @@ function App() {
       <LoginForm/> 
       <RecommendedFriends friends={listFriends} />
       <Table data={tableList}/>
-      <Menu/>*/}
       <Notification notify={true}/>
+      <Menu/>*/}
+      <SearchBox/>
       {todos.length>0 && todos.map((x,index)=><TodoItem item={x} key={index} />)}
       {todos.length==0 && 'Nothing here'}
 
