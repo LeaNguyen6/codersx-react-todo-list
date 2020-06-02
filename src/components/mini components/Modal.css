@@ -1,0 +1,51 @@
+.Modal .hide{
+    display: none;
+}
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+}
+.modal__overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body{
+    height: 500px;
+    width: 800px;
+    margin: auto; /*Căn giữa khi có flex*/
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 2;
+}
+.modal__body .close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.modal__inner{
+    padding: 1rem 2rem;
+    text-align: left;
+}
+.modal__inner .modal__bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+    width: 120px;
+    margin-left: 20px;
+}
+.btn:focus{
+    outline: none;
+}
+.decline{
+    background: #D63447;
+}

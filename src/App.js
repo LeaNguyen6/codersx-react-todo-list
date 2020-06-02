@@ -1,21 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header'
-import LoginForm from './components/LoginForm'
-import Menu from './components/Menu'
-import RecommendedFriends from './components/RecommendedFriends'
-import TodoItem from './components/TodoItem'
-import Table from './components/Table'
-import Notification from './components/Notification'
-import SearchBox from './components/SearchBox'
+
+import TodoApp from './components/TodoApp'
 
 function App() {
-  const todos =  [
-    { title: 'Go to work', done: true },
-    { title: 'Lean css', done: true },
-    { title: 'Learn REACT' }
-  ]
+
   let listFriends = [
     {
       image: "https://xansan.com/wp-content/uploads/2018/10/user-avatar-default-2609.png",
@@ -30,7 +20,7 @@ function App() {
       name: "ban than khac gioi"
     },
   ]
-  let tableList=[{
+  let tableList = [{
     id: 1,
     First: "Mark",
     Last: "Otto",
@@ -52,15 +42,28 @@ function App() {
   }]
   return (
     <div className="App">
-      {/* <Header/>
+      <TodoApp />
+
+      {/* 
+      import Header from './components/Header'
+      import LoginForm from './components/LoginForm'
+      import Menu from './components/Menu'
+      import RecommendedFriends from './components/RecommendedFriends'
+      import Table from './components/Table'
+      import Notification from './components/Notification'
+      import SearchBox from './components/SearchBox'
+      import Modal from './components/Modal'
+      <Header/>
       <LoginForm/> 
       <RecommendedFriends friends={listFriends} />
       <Table data={tableList}/>
       <Notification notify={true}/>
-      <Menu/>*/}
+      <Menu/>
       <SearchBox/>
-      {todos.length>0 && todos.map((x,index)=><TodoItem item={x} key={index} />)}
-      {todos.length==0 && 'Nothing here'}
+      <Modal/>
+      */}
+
+
 
     </div>
   );
