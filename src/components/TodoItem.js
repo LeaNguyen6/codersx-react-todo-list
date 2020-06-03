@@ -8,7 +8,7 @@ export default class TodoItem extends Component {
     render() {
         return (
             <div className={classNames('todoItem', { completed: this.props.item.done })}>
-                <p onClick={this.props.onClick}>{this.props.item.title}</p>
+                <p onClick={this.props.onClick}>{this.props.item.title}</p> <span onClick={this.props.remove}>x</span>
             </div>
         )
     }

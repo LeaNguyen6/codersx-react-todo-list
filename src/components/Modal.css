@@ -16,8 +16,6 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 .modal__body{
-    height: 500px;
-    width: 800px;
     margin: auto; /*Căn giữa khi có flex*/
     position: relative;
     background-color: white;
@@ -26,26 +24,34 @@
 }
 .modal__body .close{
     position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 1.2rem;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
     cursor: pointer;
+    color: #D63447 !important;
 }
 .modal__inner{
-    padding: 1rem 2rem;
+    padding: 2rem 2rem 1.2rem;
     text-align: left;
 }
-.modal__inner .modal__bottom{
-    display: flex;
-    justify-content: flex-end;
+.modal__inner input{
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
 }
 .btn{
-    width: 120px;
-    margin-left: 20px;
+    width: 100px;
+    float: right;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin:1rem 0 1.5rem;
+    color: white;
 }
 .btn:focus{
     outline: none;
 }
 .decline{
-    background: #D63447;
+    background: #6dbec8;
 }
