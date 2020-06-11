@@ -7,22 +7,22 @@ export default class TodoApp extends Component {
   constructor() {
     super()
     this.state = {
-      isShow: true,
+      isShow: false,
       todos: []
     }
   }
   showModal() {
-    this.setState({ isShow: false })
+    this.setState({ isShow: true })
   }
   closeModal() {
-    this.setState({ isShow: true })
+    this.setState({ isShow: false })
   }
   addItem(e) {
     let text = e.target.previousSibling.value
     text = text.trim() //Bỏ dấu cách ở đầu cuối
     if (!text) { return }
     this.setState({
-      isShow: true,
+      isShow: false,
       todos: [...this.state.todos, { title: text, done: false }]
     })
     e.target.previousSibling.value = '';
@@ -101,10 +101,14 @@ export default class TodoApp extends Component {
               </div>
             </div>}
           <button className="show-modal" onClick={this.showModal.bind(this)}><i className="fas fa-plus fa-fw"></i></button>
-          <Modal show={isShow} 
+         {/* Modal nếu chỉ ẩn hiện bằng css thì sẽ k unmount được vì nó vẫn ở trong DOM?
+          dùng js thì sẽ mount/unmount đc 
+          componentDidMount chỉ được gọi khi nó từ trạng thái "không ở trong DOM" -> "ở trong DOM"*/}
+         { isShow==true && <Modal show={isShow} 
           close={this.closeModal.bind(this)} 
           add={this.addItem.bind(this)} 
-          />
+          />}
+          
         </div>
       </div>
 

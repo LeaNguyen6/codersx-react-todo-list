@@ -3,7 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 import TodoApp from './components/TodoApp'
-import Google from './components/Google'
+import Book from './components/Book'
+import BookList from './components/BookList'
+import withFadeInWhenInView from './components/withFadeInWhenInView.js';
+
+const FadingIn = withFadeInWhenInView(() => <h1>I'm fading innnnn...</h1>);
 
 function App() {
 
@@ -41,13 +45,55 @@ function App() {
     Handle: "@mdo",
     is_even: true
   }]
+  console.log('app render')
   return (
     <div className="App">
-      <TodoApp />
-
+         <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code>
+          </p>
+          <a
+            className="App-link"
+            href="https://coders-x.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hãy cuộn xuống dưới ở màn hình kết quả<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+            Yêu anh Thịnh<br />
+          </a>
+          <FadingIn />
+        </header>   
       {/* 
-         
-           <Google/>
+         <BookList /> 
+         <TodoApp />
       import Header from './components/Header'
       import LoginForm from './components/LoginForm'
       import Menu from './components/Menu'
@@ -56,6 +102,8 @@ function App() {
       import Notification from './components/Notification'
       import SearchBox from './components/SearchBox'
       import Modal from './components/Modal'
+      import Google from './components/Google'
+
       <Header/>
       <LoginForm/> 
       <RecommendedFriends friends={listFriends} />
@@ -64,6 +112,8 @@ function App() {
       <Menu/>
       <SearchBox/>
       <Modal/>
+       <Google/>
+       <TodoApp/>
       */}
 
 
