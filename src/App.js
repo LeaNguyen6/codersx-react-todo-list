@@ -48,7 +48,20 @@ function App() {
   console.log('app render')
   return (
     <div className="App">
-         <header className="App-header">
+      <TodoApp />
+
+      {/* 
+         <BookList /> 
+      import Header from './components/Header'
+      import LoginForm from './components/LoginForm'
+      import Menu from './components/Menu'
+      import RecommendedFriends from './components/RecommendedFriends'
+      import Table from './components/Table'
+      import Notification from './components/Notification'
+      import SearchBox from './components/SearchBox'
+      import Modal from './components/Modal'
+      import Google from './components/Google'
+       <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code>
@@ -91,18 +104,6 @@ function App() {
           </a>
           <FadingIn />
         </header>   
-      {/* 
-         <BookList /> 
-         <TodoApp />
-      import Header from './components/Header'
-      import LoginForm from './components/LoginForm'
-      import Menu from './components/Menu'
-      import RecommendedFriends from './components/RecommendedFriends'
-      import Table from './components/Table'
-      import Notification from './components/Notification'
-      import SearchBox from './components/SearchBox'
-      import Modal from './components/Modal'
-      import Google from './components/Google'
 
       <Header/>
       <LoginForm/> 
